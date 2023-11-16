@@ -35,7 +35,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      {/* Landing */}
+      <div className="w-5/6 mx-auto md:h-4/6 mb-9">
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
@@ -50,7 +51,8 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      <LineGradient />
+
+      {/* my skills */}
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
@@ -60,7 +62,8 @@ function App() {
           <Skills />
         </motion.div>
       </div>
-      {/* <LineGradient /> */}
+      <LineGradient />
+      {/* projcts */}
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -71,16 +74,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      {/* <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
-        >
-          <Testimonials />
-        </motion.div>
-      </div>
-      <LineGradient /> */}
+      {/* contact */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"

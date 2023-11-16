@@ -5,10 +5,11 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-5 md:h-full py-10 my-8"
     >
       {/* LEFT MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
@@ -34,10 +35,11 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I'm a Full-Stack Developer based in Los Angeles. I am passionate
-            about Full-Stack Software Development, Open-source, Web Accessiblity
-            and Design. When I am not writing code, you can find me talking to
-            my plants or making bread.
+            I am a Full-Stack Developer living in Los Angeles who is passionate
+            about creating intricate software solutions. My interests include
+            design, accessibility on the web, and contributions to open-source
+            projects. When I'm not coding, you can find me tending to my plants
+            or honing my bread-making skills.
           </p>
         </motion.div>
 
@@ -61,7 +63,8 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
+          {/* the other contact me button */}
+          {/* <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -69,7 +72,7 @@ const Landing = ({ setSelectedPage }) => {
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
-          </AnchorLink>
+          </AnchorLink> */}
         </motion.div>
 
         <motion.div
@@ -86,24 +89,25 @@ const Landing = ({ setSelectedPage }) => {
           <SocialMediaIcons />
         </motion.div>
       </div>
+
       {/* RIGHT IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-2/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-20 before:rounded-[40px]
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-yellow before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter rounded-t-[400px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/person-1.jpeg"
+              className="hover:filter rounded-[40px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvYWNoaW5nfGVufDB8fDB8fHww"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/person-1.jpeg"
+            src="https://images.unsplash.com/photo-1494178270175-e96de2971df9?auto=format&fit=crop&q=80&w=1980&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         )}
       </div>
