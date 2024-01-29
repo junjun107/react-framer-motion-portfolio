@@ -34,12 +34,19 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I am a Full-Stack Developer living in Los Angeles who is passionate
-            about creating intricate software solutions. My interests include
-            design, accessibility on the web, and contributions to open-source
-            projects. When I'm not coding, you can find me tending to my plants
-            or honing my bread-making skills.
+          <p className="mt-10 mb-7 text-md text-center md:text-start">
+            I have experience designing and developing web applications using
+            various technologies, from the fundamental trio of{" "}
+            <span className="text-blue">HTML, CSS, and JavaScript</span> to more
+            robust frameworks and platforms like{" "}
+            <span className="text-blue"> React, and NextJS</span>. My passion
+            extends beyond just aesthetics and I love seeking new and improved
+            methods to write efficient and scalable code with the goal of
+            creating seamless user experiences.
+          </p>
+          <p className="mt-10 mb-7 text-md text-center md:text-start">
+            When I’m not at my computer, you can find me at the caring for my
+            plants in my garden, or baking a bunch of sweets in the kitchen!
           </p>
         </motion.div>
 

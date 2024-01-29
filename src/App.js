@@ -53,7 +53,7 @@ function App() {
       </div>
 
       {/* my skills */}
-      <div className="w-5/6 mx-auto md:h-full ">
+      {/* <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -61,8 +61,8 @@ function App() {
         >
           <Skills />
         </motion.div>
-      </div>
-      <LineGradient />
+      </div> */}
+      {/* <LineGradient /> */}
       {/* projcts */}
       <div className="w-5/6 mx-auto">
         <motion.div

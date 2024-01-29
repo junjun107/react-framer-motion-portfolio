@@ -14,6 +14,10 @@ const projectVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
+const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+// const projectTitle = title.split(" ").join("-").toLowerCase();
 
 const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
@@ -80,7 +84,9 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
+
           <Project title="Project 1" />
+
           <Project title="Project 2" />
 
           {/* ROW 2 */}
@@ -90,7 +96,21 @@ const Projects = () => {
 
           {/* ROW 3 */}
           <Project title="Project 6" />
-          <Project title="Project 7" />
+          {/* <Project title="Project 7" /> */}
+          <motion.div variants={projectVariant} className="relative">
+            <div className={overlayStyles}>
+              <p className="text-2xl font-playfair">Movie App</p>
+              <p className="mt-7">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Nulla porttitor accumsan tincidunt.
+              </p>
+            </div>
+
+            <img
+              src="https://res.cloudinary.com/dhhiphscp/image/upload/c_fill,w_400,h_400/v1670700132/portfolio/MovieApp_xvv46t.png"
+              alt="movie app"
+            />
+          </motion.div>
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
