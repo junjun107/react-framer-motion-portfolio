@@ -85,7 +85,36 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
 
-          <Project title="Project 1" />
+          {/* <Project title="Project 1" /> */}
+          <motion.div variants={projectVariant} className="relative">
+            <div className={overlayStyles}>
+              <p className="text-2xl font-playfair">Food Oasis</p>
+              <p className="mt-7">
+                Food Oasis is a web application that provides information about
+                food pantries and meal programs to food seekers in Los Angeles
+                County
+              </p>
+              <div className="inline-flex pt-2">
+                <a
+                  href="https://github.com/hackforla/food-oasis"
+                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://foodoasis.la/"
+                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r"
+                >
+                  Demo
+                </a>
+              </div>
+            </div>
+
+            <img
+              src="https://res.cloudinary.com/dhhiphscp/image/upload/b_rgb:FFFFFF/c_pad,w_400,h_400/v1706560821/portfolio/fola-profolio_fznjfp.png"
+              alt="food-oasis"
+            />
+          </motion.div>
 
           <Project title="Project 2" />
 
