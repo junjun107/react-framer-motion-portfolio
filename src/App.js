@@ -7,7 +7,7 @@ import Contact from "./ui/Contact";
 import Footer from "./ui/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
-
+import Skills from "./ui/Skills";
 import { motion } from "framer-motion";
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
       </div>
 
       {/* my skills */}
-      {/* <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -60,8 +60,8 @@ function App() {
         >
           <Skills />
         </motion.div>
-      </div> */}
-      {/* <LineGradient /> */}
+      </div> 
+      <LineGradient />
       {/* projcts */}
       <div className="w-5/6 mx-auto">
         <motion.div

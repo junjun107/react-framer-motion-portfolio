@@ -20,20 +20,37 @@ const Skills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MY <span>SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
+        
+
           <p className="mt-10 mb-7">
-            I am a results-driven Software Engineer with expertise in
-            JavaScript, React, Node.js, Express, and MongoDB. Proficient in web
-            development, I have successfully delivered full-stack applications
-            and contributed to open-source projects. Skilled in HTML, CSS,
-            TypeScript, and GraphQL, I bring a keen eye for design and a
-            commitment to web accessibility. My proficiency extends to cloud
-            services like AWS, and I am an AWS Certified Cloud Practitioner.
-            With a solid foundation in Agile methodologies, I am dedicated to
-            continuous learning and passionate about creating innovative
-            solutions.
+            Results-driven Software Engineer with expertise in{" "}
+            <span className="bg-gradient-to-r from-blue to-red bg-clip-text text-transparent">
+              JavaScript, React, Node.js, Express, and MongoDB
+            </span>
+            , specializing in full-stack web development. Experienced in
+            delivering scalable applications and contributing to open-source
+            projects. Proficient in{" "}
+            <span className="bg-gradient-to-r from-green-500 to-teal-700 bg-clip-text text-transparent">
+              HTML, CSS, TypeScript, and GraphQL
+            </span>
+            , with a keen eye for{" "}
+            <span className="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent">
+              UI/UX design and web accessibility
+            </span>
+            . Skilled in{" "}
+            <span className="bg-gradient-to-r from-indigo-500 to-cyan-600 bg-clip-text text-transparent">
+              AWS cloud services
+            </span>
+            , holding an AWS Certified Cloud Practitioner certification. Strong
+            foundation in{" "}
+            <span className="bg-gradient-to-r from-blue to-red bg-clip-text text-transparent">
+              Agile methodologies, collaborative development, and continuous
+              learning
+            </span>{" "}
+            to drive innovative solutions.
           </p>
         </motion.div>
         {/* skill right */}
