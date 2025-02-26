@@ -1,7 +1,6 @@
 import Navbar from "./ui/Navbar";
 import Landing from "./ui/Landing";
 import DotGroup from "./ui/DotGroup";
-import Skills from "./ui/Skills";
 import LineGradient from "./components/LineGradient";
 import Projects from "./ui/Projects";
 import Contact from "./ui/Contact";
